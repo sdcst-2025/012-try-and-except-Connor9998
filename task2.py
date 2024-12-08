@@ -19,3 +19,12 @@ The reciprocal of 3 is 0.3333333333333333
 Enter a number: 4
 The reciprocal of 4 is 0.25
 """
+
+try:
+    number = float(input("Enter a number: "))
+    if number == 0:
+        print("The reciprocal of 0 does not exist")
+    else:
+        print(f"The reciprocal of {number} is {1 / number}")
+except:
+    print("Error: Please enter a valid number.")
